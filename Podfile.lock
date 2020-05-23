@@ -1,0 +1,26 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - DropDown (2.3.13)
+  - ScrollableGraphView (4.0.6)
+
+DEPENDENCIES:
+  - Charts
+  - DropDown
+  - ScrollableGraphView (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - DropDown
+    - ScrollableGraphView
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  ScrollableGraphView: 4af35d4ea9ecdec665d34a74da51da161ddff8ac
+
+PODFILE CHECKSUM: bbe9f5a340735db8294e45548a13d40be766fa41
+
+COCOAPODS: 1.9.1

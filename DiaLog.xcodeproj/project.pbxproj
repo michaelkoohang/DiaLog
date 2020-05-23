@@ -3,27 +3,99 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C04E6B423492FE000F307BC /* EditTargetBloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04E6B323492FE000F307BC /* EditTargetBloodSugarVC.swift */; };
 		4C29FA5821ED386A00A6859B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C29FA5721ED386A00A6859B /* AppDelegate.swift */; };
-		4C29FA5A21ED386A00A6859B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C29FA5921ED386A00A6859B /* ViewController.swift */; };
-		4C29FA5D21ED386A00A6859B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C29FA5B21ED386A00A6859B /* Main.storyboard */; };
 		4C29FA6021ED386A00A6859B /* DiaLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C29FA5E21ED386A00A6859B /* DiaLog.xcdatamodeld */; };
 		4C29FA6221ED386C00A6859B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C29FA6121ED386C00A6859B /* Assets.xcassets */; };
-		4C29FA6521ED386C00A6859B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C29FA6321ED386C00A6859B /* LaunchScreen.storyboard */; };
+		4C4CE61023039FD60087CFC4 /* ding.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4C4CE60F23039E990087CFC4 /* ding.aif */; };
+		4C5204D9223B4E9400D622C1 /* AddBloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5204D8223B4E9400D622C1 /* AddBloodSugarVC.swift */; };
+		4C5BA8F32347AC0C009D45DD /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BA8F22347AC0C009D45DD /* PersistenceService.swift */; };
+		4C6913D92477659600A1683F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6913D82477659600A1683F /* CardView.swift */; };
+		4C798B8C22089F0300D85BCA /* BloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C798B8B22089F0300D85BCA /* BloodSugarVC.swift */; };
+		4C7B70682234136B00F970F0 /* A1CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B70672234136B00F970F0 /* A1CVC.swift */; };
+		4C7B706C22341F6800F970F0 /* MedicationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B706B22341F6800F970F0 /* MedicationsVC.swift */; };
+		4C7B706E2234211E00F970F0 /* FootCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B706D2234211E00F970F0 /* FootCheckVC.swift */; };
+		4C875ABB22E8AD1D00323421 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875ABA22E8AD1D00323421 /* BarGraphView.swift */; };
+		4C875AC022E8E0AD00323421 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875ABF22E8E0AD00323421 /* LineGraphView.swift */; };
+		4C875AC422E8F25100323421 /* MainMedicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875AC322E8F25100323421 /* MainMedicationCell.swift */; };
+		4C875AC622EA204A00323421 /* AllBloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875AC522EA204A00323421 /* AllBloodSugarVC.swift */; };
+		4C875AC822EA205E00323421 /* AllA1CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875AC722EA205E00323421 /* AllA1CVC.swift */; };
+		4C875ACA22EA20C100323421 /* BloodSugarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875AC922EA20C100323421 /* BloodSugarCell.swift */; };
+		4C875ACC22EA20CE00323421 /* A1CCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875ACB22EA20CE00323421 /* A1CCell.swift */; };
+		4C875ACE22EA331D00323421 /* MedicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C875ACD22EA331D00323421 /* MedicationCell.swift */; };
+		4C8B3F8B2478D98F004983C7 /* BloodSugar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F832478D98E004983C7 /* BloodSugar+CoreDataClass.swift */; };
+		4C8B3F8C2478D98F004983C7 /* Medication+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F842478D98F004983C7 /* Medication+CoreDataProperties.swift */; };
+		4C8B3F8D2478D98F004983C7 /* A1C+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F852478D98F004983C7 /* A1C+CoreDataProperties.swift */; };
+		4C8B3F8E2478D98F004983C7 /* FootCheck+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F862478D98F004983C7 /* FootCheck+CoreDataClass.swift */; };
+		4C8B3F8F2478D98F004983C7 /* A1C+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F872478D98F004983C7 /* A1C+CoreDataClass.swift */; };
+		4C8B3F902478D98F004983C7 /* FootCheck+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F882478D98F004983C7 /* FootCheck+CoreDataProperties.swift */; };
+		4C8B3F912478D98F004983C7 /* BloodSugar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F892478D98F004983C7 /* BloodSugar+CoreDataProperties.swift */; };
+		4C8B3F922478D98F004983C7 /* Medication+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F8A2478D98F004983C7 /* Medication+CoreDataClass.swift */; };
+		4CA7FB7323513D7B008C4C69 /* FootCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */; };
+		4CA7FB752353A1F3008C4C69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7FB742353A1F3008C4C69 /* UIColorExtension.swift */; };
+		4CAEF26C2348142E00341614 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF26B2348142E00341614 /* TextFieldView.swift */; };
+		4CB407F2224004DC000F5940 /* AddA1CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB407F1224004DC000F5940 /* AddA1CVC.swift */; };
+		4CB407F4224004ED000F5940 /* AddMedicationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB407F3224004ED000F5940 /* AddMedicationVC.swift */; };
+		4CBDAFB1220392DF00099BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBDAFB0220392DF00099BFD /* LaunchScreen.storyboard */; };
+		4CC9C30822D38A2F00634014 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C30722D38A2F00634014 /* DateView.swift */; };
+		4CC9C31122D3C75000634014 /* BloodSugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31022D3C75000634014 /* BloodSugarView.swift */; };
+		4CC9C31522D3D8D500634014 /* A1CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31422D3D8D500634014 /* A1CView.swift */; };
+		4CC9C31722D3DB0000634014 /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31622D3DB0000634014 /* MedicationsView.swift */; };
+		4CC9C31A22D3DB1900634014 /* FootCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31922D3DB1900634014 /* FootCheckView.swift */; };
+		4CEF9E87229F03FD00F6F8DC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF9E86229F03FD00F6F8DC /* MainVC.swift */; };
+		5F8F393854D4E9403CBCCEE8 /* libPods-DiaLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1975D2E8DF6641578A345513 /* libPods-DiaLog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C29FA5421ED386A00A6859B /* DiaLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1975D2E8DF6641578A345513 /* libPods-DiaLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiaLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C04E6B323492FE000F307BC /* EditTargetBloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTargetBloodSugarVC.swift; sourceTree = "<group>"; };
 		4C29FA5721ED386A00A6859B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C29FA5921ED386A00A6859B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C29FA5C21ED386A00A6859B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C29FA5F21ED386A00A6859B /* DiaLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiaLog.xcdatamodel; sourceTree = "<group>"; };
 		4C29FA6121ED386C00A6859B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C29FA6421ED386C00A6859B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C29FA6621ED386C00A6859B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2EF26722B0A6CC002563D8 /* DiaLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4CE60F23039E990087CFC4 /* ding.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = ding.aif; sourceTree = "<group>"; };
+		4C5204D8223B4E9400D622C1 /* AddBloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodSugarVC.swift; sourceTree = "<group>"; };
+		4C5BA8F22347AC0C009D45DD /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		4C6913D82477659600A1683F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4C798B8B22089F0300D85BCA /* BloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarVC.swift; sourceTree = "<group>"; };
+		4C7B70672234136B00F970F0 /* A1CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CVC.swift; sourceTree = "<group>"; };
+		4C7B706B22341F6800F970F0 /* MedicationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsVC.swift; sourceTree = "<group>"; };
+		4C7B706D2234211E00F970F0 /* FootCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootCheckVC.swift; sourceTree = "<group>"; };
+		4C875ABA22E8AD1D00323421 /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
+		4C875ABF22E8E0AD00323421 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		4C875AC322E8F25100323421 /* MainMedicationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMedicationCell.swift; sourceTree = "<group>"; };
+		4C875AC522EA204A00323421 /* AllBloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBloodSugarVC.swift; sourceTree = "<group>"; };
+		4C875AC722EA205E00323421 /* AllA1CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllA1CVC.swift; sourceTree = "<group>"; };
+		4C875AC922EA20C100323421 /* BloodSugarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarCell.swift; sourceTree = "<group>"; };
+		4C875ACB22EA20CE00323421 /* A1CCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CCell.swift; sourceTree = "<group>"; };
+		4C875ACD22EA331D00323421 /* MedicationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationCell.swift; sourceTree = "<group>"; };
+		4C8B3F832478D98E004983C7 /* BloodSugar+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BloodSugar+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C8B3F842478D98F004983C7 /* Medication+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C8B3F852478D98F004983C7 /* A1C+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "A1C+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C8B3F862478D98F004983C7 /* FootCheck+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FootCheck+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C8B3F872478D98F004983C7 /* A1C+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "A1C+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C8B3F882478D98F004983C7 /* FootCheck+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FootCheck+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C8B3F892478D98F004983C7 /* BloodSugar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BloodSugar+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4C8B3F8A2478D98F004983C7 /* Medication+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootCheckCell.swift; sourceTree = "<group>"; };
+		4CA7FB742353A1F3008C4C69 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4CAEF26B2348142E00341614 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		4CB407F1224004DC000F5940 /* AddA1CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddA1CVC.swift; sourceTree = "<group>"; };
+		4CB407F3224004ED000F5940 /* AddMedicationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationVC.swift; sourceTree = "<group>"; };
+		4CBDAFB0220392DF00099BFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CC9C30722D38A2F00634014 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		4CC9C31022D3C75000634014 /* BloodSugarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarView.swift; sourceTree = "<group>"; };
+		4CC9C31422D3D8D500634014 /* A1CView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CView.swift; sourceTree = "<group>"; };
+		4CC9C31622D3DB0000634014 /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
+		4CC9C31922D3DB1900634014 /* FootCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootCheckView.swift; sourceTree = "<group>"; };
+		4CEF9E86229F03FD00F6F8DC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		CCC8B188F6FEBF21B54B2540 /* Pods-DiaLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaLog.release.xcconfig"; path = "Target Support Files/Pods-DiaLog/Pods-DiaLog.release.xcconfig"; sourceTree = "<group>"; };
+		E059400178AE6CD5BE117D35 /* Pods-DiaLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaLog.debug.xcconfig"; path = "Target Support Files/Pods-DiaLog/Pods-DiaLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,40 +103,118 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8F393854D4E9403CBCCEE8 /* libPods-DiaLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E05363518466A7DDEF13DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1975D2E8DF6641578A345513 /* libPods-DiaLog.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DCEFAFAE92307C1E80F36BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E059400178AE6CD5BE117D35 /* Pods-DiaLog.debug.xcconfig */,
+				CCC8B188F6FEBF21B54B2540 /* Pods-DiaLog.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4C29FA4B21ED386A00A6859B = {
 			isa = PBXGroup;
 			children = (
 				4C29FA5621ED386A00A6859B /* DiaLog */,
-				4C29FA5521ED386A00A6859B /* Products */,
+				4C2EF26722B0A6CC002563D8 /* DiaLog.app */,
+				2DCEFAFAE92307C1E80F36BE /* Pods */,
+				12E05363518466A7DDEF13DD /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		4C29FA5521ED386A00A6859B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4C29FA5421ED386A00A6859B /* DiaLog.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4C29FA5621ED386A00A6859B /* DiaLog */ = {
 			isa = PBXGroup;
 			children = (
+				4CB41704222F3A6700B912D2 /* Model */,
+				4C875AC122E8E42900323421 /* View */,
+				4CB41705222F3A7000B912D2 /* Controller */,
+				4C4CE60F23039E990087CFC4 /* ding.aif */,
+				4C5BA8F22347AC0C009D45DD /* PersistenceService.swift */,
 				4C29FA5721ED386A00A6859B /* AppDelegate.swift */,
-				4C29FA5921ED386A00A6859B /* ViewController.swift */,
-				4C29FA5B21ED386A00A6859B /* Main.storyboard */,
+				4CBDAFB0220392DF00099BFD /* LaunchScreen.storyboard */,
 				4C29FA6121ED386C00A6859B /* Assets.xcassets */,
-				4C29FA6321ED386C00A6859B /* LaunchScreen.storyboard */,
 				4C29FA6621ED386C00A6859B /* Info.plist */,
-				4C29FA5E21ED386A00A6859B /* DiaLog.xcdatamodeld */,
 			);
 			path = DiaLog;
+			sourceTree = "<group>";
+		};
+		4C875AC122E8E42900323421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C875AC222E8F24300323421 /* Cells */,
+				4CC9C30722D38A2F00634014 /* DateView.swift */,
+				4CC9C31022D3C75000634014 /* BloodSugarView.swift */,
+				4CC9C31422D3D8D500634014 /* A1CView.swift */,
+				4CC9C31622D3DB0000634014 /* MedicationsView.swift */,
+				4CC9C31922D3DB1900634014 /* FootCheckView.swift */,
+				4C875ABA22E8AD1D00323421 /* BarGraphView.swift */,
+				4C875ABF22E8E0AD00323421 /* LineGraphView.swift */,
+				4CAEF26B2348142E00341614 /* TextFieldView.swift */,
+				4CA7FB742353A1F3008C4C69 /* UIColorExtension.swift */,
+				4C6913D82477659600A1683F /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C875AC222E8F24300323421 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C875AC322E8F25100323421 /* MainMedicationCell.swift */,
+				4C875AC922EA20C100323421 /* BloodSugarCell.swift */,
+				4C875ACB22EA20CE00323421 /* A1CCell.swift */,
+				4C875ACD22EA331D00323421 /* MedicationCell.swift */,
+				4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4CB41704222F3A6700B912D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C8B3F832478D98E004983C7 /* BloodSugar+CoreDataClass.swift */,
+				4C8B3F892478D98F004983C7 /* BloodSugar+CoreDataProperties.swift */,
+				4C8B3F872478D98F004983C7 /* A1C+CoreDataClass.swift */,
+				4C8B3F852478D98F004983C7 /* A1C+CoreDataProperties.swift */,
+				4C8B3F8A2478D98F004983C7 /* Medication+CoreDataClass.swift */,
+				4C8B3F842478D98F004983C7 /* Medication+CoreDataProperties.swift */,
+				4C8B3F862478D98F004983C7 /* FootCheck+CoreDataClass.swift */,
+				4C8B3F882478D98F004983C7 /* FootCheck+CoreDataProperties.swift */,
+				4C29FA5E21ED386A00A6859B /* DiaLog.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CB41705222F3A7000B912D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CEF9E86229F03FD00F6F8DC /* MainVC.swift */,
+				4C04E6B323492FE000F307BC /* EditTargetBloodSugarVC.swift */,
+				4C798B8B22089F0300D85BCA /* BloodSugarVC.swift */,
+				4C5204D8223B4E9400D622C1 /* AddBloodSugarVC.swift */,
+				4C7B70672234136B00F970F0 /* A1CVC.swift */,
+				4CB407F1224004DC000F5940 /* AddA1CVC.swift */,
+				4C7B706B22341F6800F970F0 /* MedicationsVC.swift */,
+				4CB407F3224004ED000F5940 /* AddMedicationVC.swift */,
+				4C7B706D2234211E00F970F0 /* FootCheckVC.swift */,
+				4C875AC522EA204A00323421 /* AllBloodSugarVC.swift */,
+				4C875AC722EA205E00323421 /* AllA1CVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C29FA6921ED386C00A6859B /* Build configuration list for PBXNativeTarget "DiaLog" */;
 			buildPhases = (
+				9F17727D6FAB9A2AA2ACFF5E /* [CP] Check Pods Manifest.lock */,
 				4C29FA5021ED386A00A6859B /* Sources */,
 				4C29FA5121ED386A00A6859B /* Frameworks */,
 				4C29FA5221ED386A00A6859B /* Resources */,
+				6C496E098DAEE6289323AF92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -84,7 +236,7 @@
 			);
 			name = DiaLog;
 			productName = DiaLog;
-			productReference = 4C29FA5421ED386A00A6859B /* DiaLog.app */;
+			productReference = 4C2EF26722B0A6CC002563D8 /* DiaLog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,6 +251,7 @@
 				TargetAttributes = {
 					4C29FA5321ED386A00A6859B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -111,7 +264,7 @@
 				Base,
 			);
 			mainGroup = 4C29FA4B21ED386A00A6859B;
-			productRefGroup = 4C29FA5521ED386A00A6859B /* Products */;
+			productRefGroup = 4C29FA4B21ED386A00A6859B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -125,45 +278,102 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C29FA6521ED386C00A6859B /* LaunchScreen.storyboard in Resources */,
+				4C4CE61023039FD60087CFC4 /* ding.aif in Resources */,
+				4CBDAFB1220392DF00099BFD /* LaunchScreen.storyboard in Resources */,
 				4C29FA6221ED386C00A6859B /* Assets.xcassets in Resources */,
-				4C29FA5D21ED386A00A6859B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C496E098DAEE6289323AF92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiaLog/Pods-DiaLog-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiaLog/Pods-DiaLog-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiaLog/Pods-DiaLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F17727D6FAB9A2AA2ACFF5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiaLog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C29FA5021ED386A00A6859B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C29FA5A21ED386A00A6859B /* ViewController.swift in Sources */,
+				4C875ACA22EA20C100323421 /* BloodSugarCell.swift in Sources */,
+				4C8B3F8F2478D98F004983C7 /* A1C+CoreDataClass.swift in Sources */,
+				4C5BA8F32347AC0C009D45DD /* PersistenceService.swift in Sources */,
+				4C875AC822EA205E00323421 /* AllA1CVC.swift in Sources */,
+				4C8B3F902478D98F004983C7 /* FootCheck+CoreDataProperties.swift in Sources */,
+				4C8B3F8C2478D98F004983C7 /* Medication+CoreDataProperties.swift in Sources */,
+				4CB407F4224004ED000F5940 /* AddMedicationVC.swift in Sources */,
+				4C6913D92477659600A1683F /* CardView.swift in Sources */,
+				4C8B3F8B2478D98F004983C7 /* BloodSugar+CoreDataClass.swift in Sources */,
+				4C8B3F8D2478D98F004983C7 /* A1C+CoreDataProperties.swift in Sources */,
+				4C875AC422E8F25100323421 /* MainMedicationCell.swift in Sources */,
+				4CA7FB7323513D7B008C4C69 /* FootCheckCell.swift in Sources */,
+				4C04E6B423492FE000F307BC /* EditTargetBloodSugarVC.swift in Sources */,
+				4C8B3F8E2478D98F004983C7 /* FootCheck+CoreDataClass.swift in Sources */,
+				4C875ACC22EA20CE00323421 /* A1CCell.swift in Sources */,
+				4C8B3F912478D98F004983C7 /* BloodSugar+CoreDataProperties.swift in Sources */,
+				4CC9C31A22D3DB1900634014 /* FootCheckView.swift in Sources */,
+				4C7B70682234136B00F970F0 /* A1CVC.swift in Sources */,
+				4C798B8C22089F0300D85BCA /* BloodSugarVC.swift in Sources */,
+				4CAEF26C2348142E00341614 /* TextFieldView.swift in Sources */,
+				4C8B3F922478D98F004983C7 /* Medication+CoreDataClass.swift in Sources */,
+				4CEF9E87229F03FD00F6F8DC /* MainVC.swift in Sources */,
+				4C875AC022E8E0AD00323421 /* LineGraphView.swift in Sources */,
+				4C5204D9223B4E9400D622C1 /* AddBloodSugarVC.swift in Sources */,
+				4CC9C31122D3C75000634014 /* BloodSugarView.swift in Sources */,
+				4CA7FB752353A1F3008C4C69 /* UIColorExtension.swift in Sources */,
+				4CC9C31522D3D8D500634014 /* A1CView.swift in Sources */,
+				4C875ACE22EA331D00323421 /* MedicationCell.swift in Sources */,
+				4C875ABB22E8AD1D00323421 /* BarGraphView.swift in Sources */,
+				4C7B706C22341F6800F970F0 /* MedicationsVC.swift in Sources */,
+				4C875AC622EA204A00323421 /* AllBloodSugarVC.swift in Sources */,
+				4C7B706E2234211E00F970F0 /* FootCheckVC.swift in Sources */,
 				4C29FA5821ED386A00A6859B /* AppDelegate.swift in Sources */,
+				4CC9C30822D38A2F00634014 /* DateView.swift in Sources */,
 				4C29FA6021ED386A00A6859B /* DiaLog.xcdatamodeld in Sources */,
+				4CC9C31722D3DB0000634014 /* MedicationsView.swift in Sources */,
+				4CB407F2224004DC000F5940 /* AddA1CVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4C29FA5B21ED386A00A6859B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C29FA5C21ED386A00A6859B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C29FA6321ED386C00A6859B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C29FA6421ED386C00A6859B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C29FA6721ED386C00A6859B /* Debug */ = {
@@ -284,37 +494,47 @@
 		};
 		4C29FA6A21ED386C00A6859B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E059400178AE6CD5BE117D35 /* Pods-DiaLog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2DL7UPC8;
 				INFOPLIST_FILE = DiaLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Koohang.DiaLog;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiaLog;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4C29FA6B21ED386C00A6859B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC8B188F6FEBF21B54B2540 /* Pods-DiaLog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2DL7UPC8;
 				INFOPLIST_FILE = DiaLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Koohang.DiaLog;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DiaLog;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+module Pods_DiaLog {
+  umbrella header "Pods-DiaLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
