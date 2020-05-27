@@ -25,17 +25,20 @@ class A1CCell: UITableViewCell {
         self.addSubview(date)
         self.addSubview(time)
         
-        log.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
-        log.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
+        NSLayoutConstraint.activate([
+            log.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0),
+            log.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
+            
+            units.lastBaselineAnchor.constraint(equalTo: log.lastBaselineAnchor, constant: 0),
+            units.leftAnchor.constraint(equalTo: log.rightAnchor, constant: 8),
+            
+            date.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -12),
+            date.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
+            
+            time.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 12),
+            time.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20)
+        ])
         
-        units.lastBaselineAnchor.constraint(equalTo: log.lastBaselineAnchor, constant: 0).isActive = true
-        units.leftAnchor.constraint(equalTo: log.rightAnchor, constant: 8).isActive = true
-        
-        date.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -12).isActive = true
-        date.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
-        
-        time.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 12).isActive = true
-        time.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
     }
     
     // UI Components

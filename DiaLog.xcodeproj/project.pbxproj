@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C04E6B423492FE000F307BC /* EditTargetBloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04E6B323492FE000F307BC /* EditTargetBloodSugarVC.swift */; };
+		4C18DAF22479F42100280524 /* HomeDateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18DAF12479F42100280524 /* HomeDateCard.swift */; };
+		4C18DAF42479FA9B00280524 /* HomeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18DAF32479FA9B00280524 /* HomeCard.swift */; };
+		4C18DAF62479FB5200280524 /* HomeA1CCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18DAF52479FB5200280524 /* HomeA1CCard.swift */; };
+		4C18DAF8247A045D00280524 /* HomeMedicationsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18DAF7247A045D00280524 /* HomeMedicationsCard.swift */; };
+		4C18DAFA247A0C7200280524 /* HomeFootCheckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C18DAF9247A0C7200280524 /* HomeFootCheckCard.swift */; };
+		4C1BCAEE247AF76500163E8B /* DBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1BCAED247AF76500163E8B /* DBHandler.swift */; };
 		4C29FA5821ED386A00A6859B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C29FA5721ED386A00A6859B /* AppDelegate.swift */; };
 		4C29FA6021ED386A00A6859B /* DiaLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C29FA5E21ED386A00A6859B /* DiaLog.xcdatamodeld */; };
 		4C29FA6221ED386C00A6859B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C29FA6121ED386C00A6859B /* Assets.xcassets */; };
-		4C4CE61023039FD60087CFC4 /* ding.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4C4CE60F23039E990087CFC4 /* ding.aif */; };
-		4C5204D9223B4E9400D622C1 /* AddBloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5204D8223B4E9400D622C1 /* AddBloodSugarVC.swift */; };
+		4C39FE31247A20DE006D9326 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C39FE30247A20DE006D9326 /* heart.json */; };
+		4C39FE4B247A3292006D9326 /* meds.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C39FE4A247A3292006D9326 /* meds.json */; };
+		4C39FE4D247A3397006D9326 /* dots.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C39FE4C247A3396006D9326 /* dots.json */; };
+		4C39FE4F247A34DE006D9326 /* camera.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C39FE4E247A34DE006D9326 /* camera.json */; };
+		4C39FE51247A45D8006D9326 /* HomeTodayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C39FE50247A45D8006D9326 /* HomeTodayCard.swift */; };
+		4C4724AB247CDBF9006DE998 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4724AA247CDBF9006DE998 /* InputCell.swift */; };
+		4C4724AD247CF227006DE998 /* InputLongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4724AC247CF227006DE998 /* InputLongCell.swift */; };
+		4C4724AF247D7848006DE998 /* InputPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4724AE247D7848006DE998 /* InputPickerCell.swift */; };
+		4C4B9395247DE81400BDC454 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B9394247DE81400BDC454 /* StatusView.swift */; };
+		4C4B9397247DF9C800BDC454 /* InputImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B9396247DF9C800BDC454 /* InputImageCell.swift */; };
+		4C4B939A247E032400BDC454 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B9399247E032400BDC454 /* Enums.swift */; };
+		4C514C482479BF9F00421AC0 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C514C472479BF9F00421AC0 /* BaseVC.swift */; };
+		4C514C4B2479C25500421AC0 /* HomeTargetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C514C4A2479C25500421AC0 /* HomeTargetCard.swift */; };
 		4C5BA8F32347AC0C009D45DD /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BA8F22347AC0C009D45DD /* PersistenceService.swift */; };
+		4C5C4253247A4EFF00A32D5E /* LogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C4252247A4EFF00A32D5E /* LogVC.swift */; };
 		4C6913D92477659600A1683F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6913D82477659600A1683F /* CardView.swift */; };
+		4C739ACE247B320800D14D3C /* LogTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C739ACD247B320800D14D3C /* LogTypeCell.swift */; };
 		4C798B8C22089F0300D85BCA /* BloodSugarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C798B8B22089F0300D85BCA /* BloodSugarVC.swift */; };
 		4C7B70682234136B00F970F0 /* A1CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B70672234136B00F970F0 /* A1CVC.swift */; };
 		4C7B706C22341F6800F970F0 /* MedicationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B706B22341F6800F970F0 /* MedicationsVC.swift */; };
@@ -36,32 +54,44 @@
 		4C8B3F912478D98F004983C7 /* BloodSugar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F892478D98F004983C7 /* BloodSugar+CoreDataProperties.swift */; };
 		4C8B3F922478D98F004983C7 /* Medication+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8B3F8A2478D98F004983C7 /* Medication+CoreDataClass.swift */; };
 		4CA7FB7323513D7B008C4C69 /* FootCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */; };
-		4CA7FB752353A1F3008C4C69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7FB742353A1F3008C4C69 /* UIColorExtension.swift */; };
-		4CAEF26C2348142E00341614 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAEF26B2348142E00341614 /* TextFieldView.swift */; };
-		4CB407F2224004DC000F5940 /* AddA1CVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB407F1224004DC000F5940 /* AddA1CVC.swift */; };
-		4CB407F4224004ED000F5940 /* AddMedicationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB407F3224004ED000F5940 /* AddMedicationVC.swift */; };
 		4CBDAFB1220392DF00099BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBDAFB0220392DF00099BFD /* LaunchScreen.storyboard */; };
-		4CC9C30822D38A2F00634014 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C30722D38A2F00634014 /* DateView.swift */; };
-		4CC9C31122D3C75000634014 /* BloodSugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31022D3C75000634014 /* BloodSugarView.swift */; };
-		4CC9C31522D3D8D500634014 /* A1CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31422D3D8D500634014 /* A1CView.swift */; };
-		4CC9C31722D3DB0000634014 /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31622D3DB0000634014 /* MedicationsView.swift */; };
-		4CC9C31A22D3DB1900634014 /* FootCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9C31922D3DB1900634014 /* FootCheckView.swift */; };
-		4CEF9E87229F03FD00F6F8DC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF9E86229F03FD00F6F8DC /* MainVC.swift */; };
+		4CEF0A832479AD1C00DFA0D3 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF0A822479AD1C00DFA0D3 /* TabBarVC.swift */; };
+		4CEF0A852479B6A800DFA0D3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF0A842479B6A800DFA0D3 /* SettingsVC.swift */; };
+		4CEF0A872479B6FC00DFA0D3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF0A862479B6FC00DFA0D3 /* SettingsCell.swift */; };
+		4CEF9E87229F03FD00F6F8DC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF9E86229F03FD00F6F8DC /* HomeVC.swift */; };
 		5F8F393854D4E9403CBCCEE8 /* libPods-DiaLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1975D2E8DF6641578A345513 /* libPods-DiaLog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1975D2E8DF6641578A345513 /* libPods-DiaLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiaLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C04E6B323492FE000F307BC /* EditTargetBloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTargetBloodSugarVC.swift; sourceTree = "<group>"; };
+		4C18DAF12479F42100280524 /* HomeDateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDateCard.swift; sourceTree = "<group>"; };
+		4C18DAF32479FA9B00280524 /* HomeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCard.swift; sourceTree = "<group>"; };
+		4C18DAF52479FB5200280524 /* HomeA1CCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeA1CCard.swift; sourceTree = "<group>"; };
+		4C18DAF7247A045D00280524 /* HomeMedicationsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMedicationsCard.swift; sourceTree = "<group>"; };
+		4C18DAF9247A0C7200280524 /* HomeFootCheckCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFootCheckCard.swift; sourceTree = "<group>"; };
+		4C1BCAED247AF76500163E8B /* DBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHandler.swift; sourceTree = "<group>"; };
 		4C29FA5721ED386A00A6859B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C29FA5F21ED386A00A6859B /* DiaLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiaLog.xcdatamodel; sourceTree = "<group>"; };
 		4C29FA6121ED386C00A6859B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C29FA6621ED386C00A6859B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2EF26722B0A6CC002563D8 /* DiaLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C4CE60F23039E990087CFC4 /* ding.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = ding.aif; sourceTree = "<group>"; };
-		4C5204D8223B4E9400D622C1 /* AddBloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodSugarVC.swift; sourceTree = "<group>"; };
+		4C39FE30247A20DE006D9326 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
+		4C39FE4A247A3292006D9326 /* meds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meds.json; sourceTree = "<group>"; };
+		4C39FE4C247A3396006D9326 /* dots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dots.json; sourceTree = "<group>"; };
+		4C39FE4E247A34DE006D9326 /* camera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = camera.json; sourceTree = "<group>"; };
+		4C39FE50247A45D8006D9326 /* HomeTodayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTodayCard.swift; sourceTree = "<group>"; };
+		4C4724AA247CDBF9006DE998 /* InputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCell.swift; sourceTree = "<group>"; };
+		4C4724AC247CF227006DE998 /* InputLongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLongCell.swift; sourceTree = "<group>"; };
+		4C4724AE247D7848006DE998 /* InputPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPickerCell.swift; sourceTree = "<group>"; };
+		4C4B9394247DE81400BDC454 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		4C4B9396247DF9C800BDC454 /* InputImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageCell.swift; sourceTree = "<group>"; };
+		4C4B9399247E032400BDC454 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4C514C472479BF9F00421AC0 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		4C514C4A2479C25500421AC0 /* HomeTargetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTargetCard.swift; sourceTree = "<group>"; };
 		4C5BA8F22347AC0C009D45DD /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		4C5C4252247A4EFF00A32D5E /* LogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogVC.swift; sourceTree = "<group>"; };
 		4C6913D82477659600A1683F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4C739ACD247B320800D14D3C /* LogTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTypeCell.swift; sourceTree = "<group>"; };
 		4C798B8B22089F0300D85BCA /* BloodSugarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarVC.swift; sourceTree = "<group>"; };
 		4C7B70672234136B00F970F0 /* A1CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CVC.swift; sourceTree = "<group>"; };
 		4C7B706B22341F6800F970F0 /* MedicationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsVC.swift; sourceTree = "<group>"; };
@@ -83,17 +113,11 @@
 		4C8B3F892478D98F004983C7 /* BloodSugar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BloodSugar+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4C8B3F8A2478D98F004983C7 /* Medication+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootCheckCell.swift; sourceTree = "<group>"; };
-		4CA7FB742353A1F3008C4C69 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		4CAEF26B2348142E00341614 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
-		4CB407F1224004DC000F5940 /* AddA1CVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddA1CVC.swift; sourceTree = "<group>"; };
-		4CB407F3224004ED000F5940 /* AddMedicationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationVC.swift; sourceTree = "<group>"; };
 		4CBDAFB0220392DF00099BFD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4CC9C30722D38A2F00634014 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
-		4CC9C31022D3C75000634014 /* BloodSugarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarView.swift; sourceTree = "<group>"; };
-		4CC9C31422D3D8D500634014 /* A1CView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1CView.swift; sourceTree = "<group>"; };
-		4CC9C31622D3DB0000634014 /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
-		4CC9C31922D3DB1900634014 /* FootCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootCheckView.swift; sourceTree = "<group>"; };
-		4CEF9E86229F03FD00F6F8DC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4CEF0A822479AD1C00DFA0D3 /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		4CEF0A842479B6A800DFA0D3 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		4CEF0A862479B6FC00DFA0D3 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		4CEF9E86229F03FD00F6F8DC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CCC8B188F6FEBF21B54B2540 /* Pods-DiaLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaLog.release.xcconfig"; path = "Target Support Files/Pods-DiaLog/Pods-DiaLog.release.xcconfig"; sourceTree = "<group>"; };
 		E059400178AE6CD5BE117D35 /* Pods-DiaLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaLog.debug.xcconfig"; path = "Target Support Files/Pods-DiaLog/Pods-DiaLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +151,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4C18DAFB247A0F6700280524 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				4C875ABA22E8AD1D00323421 /* BarGraphView.swift */,
+				4C875ABF22E8E0AD00323421 /* LineGraphView.swift */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
 		4C29FA4B21ED386A00A6859B = {
 			isa = PBXGroup;
 			children = (
@@ -140,10 +173,11 @@
 		4C29FA5621ED386A00A6859B /* DiaLog */ = {
 			isa = PBXGroup;
 			children = (
+				4C39FE21247A1527006D9326 /* Lottie */,
 				4CB41704222F3A6700B912D2 /* Model */,
 				4C875AC122E8E42900323421 /* View */,
 				4CB41705222F3A7000B912D2 /* Controller */,
-				4C4CE60F23039E990087CFC4 /* ding.aif */,
+				4C1BCAED247AF76500163E8B /* DBHandler.swift */,
 				4C5BA8F22347AC0C009D45DD /* PersistenceService.swift */,
 				4C29FA5721ED386A00A6859B /* AppDelegate.swift */,
 				4CBDAFB0220392DF00099BFD /* LaunchScreen.storyboard */,
@@ -153,37 +187,18 @@
 			path = DiaLog;
 			sourceTree = "<group>";
 		};
-		4C875AC122E8E42900323421 /* View */ = {
+		4C39FE21247A1527006D9326 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				4C875AC222E8F24300323421 /* Cells */,
-				4CC9C30722D38A2F00634014 /* DateView.swift */,
-				4CC9C31022D3C75000634014 /* BloodSugarView.swift */,
-				4CC9C31422D3D8D500634014 /* A1CView.swift */,
-				4CC9C31622D3DB0000634014 /* MedicationsView.swift */,
-				4CC9C31922D3DB1900634014 /* FootCheckView.swift */,
-				4C875ABA22E8AD1D00323421 /* BarGraphView.swift */,
-				4C875ABF22E8E0AD00323421 /* LineGraphView.swift */,
-				4CAEF26B2348142E00341614 /* TextFieldView.swift */,
-				4CA7FB742353A1F3008C4C69 /* UIColorExtension.swift */,
-				4C6913D82477659600A1683F /* CardView.swift */,
+				4C39FE4E247A34DE006D9326 /* camera.json */,
+				4C39FE30247A20DE006D9326 /* heart.json */,
+				4C39FE4C247A3396006D9326 /* dots.json */,
+				4C39FE4A247A3292006D9326 /* meds.json */,
 			);
-			path = View;
+			path = Lottie;
 			sourceTree = "<group>";
 		};
-		4C875AC222E8F24300323421 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				4C875AC322E8F25100323421 /* MainMedicationCell.swift */,
-				4C875AC922EA20C100323421 /* BloodSugarCell.swift */,
-				4C875ACB22EA20CE00323421 /* A1CCell.swift */,
-				4C875ACD22EA331D00323421 /* MedicationCell.swift */,
-				4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		4CB41704222F3A6700B912D2 /* Model */ = {
+		4C4B9398247E031000BDC454 /* DB */ = {
 			isa = PBXGroup;
 			children = (
 				4C8B3F832478D98E004983C7 /* BloodSugar+CoreDataClass.swift */,
@@ -196,25 +211,126 @@
 				4C8B3F882478D98F004983C7 /* FootCheck+CoreDataProperties.swift */,
 				4C29FA5E21ED386A00A6859B /* DiaLog.xcdatamodeld */,
 			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		4C514C4C2479C25B00421AC0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4C18DAF32479FA9B00280524 /* HomeCard.swift */,
+				4C18DAF12479F42100280524 /* HomeDateCard.swift */,
+				4C5C4254247AD20700A32D5E /* Blood Sugar */,
+				4C5C4255247AD20F00A32D5E /* A1C */,
+				4C5C4256247AD21700A32D5E /* Medications */,
+				4C5C4257247AD23A00A32D5E /* Foot Check */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4C5C4254247AD20700A32D5E /* Blood Sugar */ = {
+			isa = PBXGroup;
+			children = (
+				4C514C4A2479C25500421AC0 /* HomeTargetCard.swift */,
+				4C39FE50247A45D8006D9326 /* HomeTodayCard.swift */,
+			);
+			path = "Blood Sugar";
+			sourceTree = "<group>";
+		};
+		4C5C4255247AD20F00A32D5E /* A1C */ = {
+			isa = PBXGroup;
+			children = (
+				4C18DAF52479FB5200280524 /* HomeA1CCard.swift */,
+			);
+			path = A1C;
+			sourceTree = "<group>";
+		};
+		4C5C4256247AD21700A32D5E /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				4C18DAF7247A045D00280524 /* HomeMedicationsCard.swift */,
+			);
+			path = Medications;
+			sourceTree = "<group>";
+		};
+		4C5C4257247AD23A00A32D5E /* Foot Check */ = {
+			isa = PBXGroup;
+			children = (
+				4C18DAF9247A0C7200280524 /* HomeFootCheckCard.swift */,
+			);
+			path = "Foot Check";
+			sourceTree = "<group>";
+		};
+		4C875AC122E8E42900323421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C18DAFB247A0F6700280524 /* Graphs */,
+				4C514C4C2479C25B00421AC0 /* Home */,
+				4CB1B6C1247CB793006EC8A8 /* Log */,
+				4C875AC222E8F24300323421 /* Cells */,
+				4C4B9394247DE81400BDC454 /* StatusView.swift */,
+				4C6913D82477659600A1683F /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C875AC222E8F24300323421 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4CEF0A862479B6FC00DFA0D3 /* SettingsCell.swift */,
+				4C875AC922EA20C100323421 /* BloodSugarCell.swift */,
+				4C875ACB22EA20CE00323421 /* A1CCell.swift */,
+				4C875AC322E8F25100323421 /* MainMedicationCell.swift */,
+				4C875ACD22EA331D00323421 /* MedicationCell.swift */,
+				4CA7FB7223513D7B008C4C69 /* FootCheckCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4CB1B6C1247CB793006EC8A8 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				4CC1FE54247CBC9400FBAB8F /* Inputs */,
+				4C739ACD247B320800D14D3C /* LogTypeCell.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		4CB41704222F3A6700B912D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C4B9398247E031000BDC454 /* DB */,
+				4C4B9399247E032400BDC454 /* Enums.swift */,
+			);
 			path = Model;
 			sourceTree = "<group>";
 		};
 		4CB41705222F3A7000B912D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4CEF9E86229F03FD00F6F8DC /* MainVC.swift */,
-				4C04E6B323492FE000F307BC /* EditTargetBloodSugarVC.swift */,
+				4CEF0A822479AD1C00DFA0D3 /* TabBarVC.swift */,
+				4C514C472479BF9F00421AC0 /* BaseVC.swift */,
+				4CEF9E86229F03FD00F6F8DC /* HomeVC.swift */,
+				4C5C4252247A4EFF00A32D5E /* LogVC.swift */,
+				4CEF0A842479B6A800DFA0D3 /* SettingsVC.swift */,
 				4C798B8B22089F0300D85BCA /* BloodSugarVC.swift */,
-				4C5204D8223B4E9400D622C1 /* AddBloodSugarVC.swift */,
 				4C7B70672234136B00F970F0 /* A1CVC.swift */,
-				4CB407F1224004DC000F5940 /* AddA1CVC.swift */,
 				4C7B706B22341F6800F970F0 /* MedicationsVC.swift */,
-				4CB407F3224004ED000F5940 /* AddMedicationVC.swift */,
 				4C7B706D2234211E00F970F0 /* FootCheckVC.swift */,
 				4C875AC522EA204A00323421 /* AllBloodSugarVC.swift */,
 				4C875AC722EA205E00323421 /* AllA1CVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CC1FE54247CBC9400FBAB8F /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				4C4724AA247CDBF9006DE998 /* InputCell.swift */,
+				4C4724AE247D7848006DE998 /* InputPickerCell.swift */,
+				4C4724AC247CF227006DE998 /* InputLongCell.swift */,
+				4C4B9396247DF9C800BDC454 /* InputImageCell.swift */,
+			);
+			path = Inputs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +344,6 @@
 				4C29FA5021ED386A00A6859B /* Sources */,
 				4C29FA5121ED386A00A6859B /* Frameworks */,
 				4C29FA5221ED386A00A6859B /* Resources */,
-				6C496E098DAEE6289323AF92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,8 +393,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4CE61023039FD60087CFC4 /* ding.aif in Resources */,
+				4C39FE4B247A3292006D9326 /* meds.json in Resources */,
+				4C39FE4D247A3397006D9326 /* dots.json in Resources */,
 				4CBDAFB1220392DF00099BFD /* LaunchScreen.storyboard in Resources */,
+				4C39FE31247A20DE006D9326 /* heart.json in Resources */,
+				4C39FE4F247A34DE006D9326 /* camera.json in Resources */,
 				4C29FA6221ED386C00A6859B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,23 +405,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6C496E098DAEE6289323AF92 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DiaLog/Pods-DiaLog-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DiaLog/Pods-DiaLog-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiaLog/Pods-DiaLog-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9F17727D6FAB9A2AA2ACFF5E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,41 +436,50 @@
 			files = (
 				4C875ACA22EA20C100323421 /* BloodSugarCell.swift in Sources */,
 				4C8B3F8F2478D98F004983C7 /* A1C+CoreDataClass.swift in Sources */,
+				4C4724AD247CF227006DE998 /* InputLongCell.swift in Sources */,
+				4C514C4B2479C25500421AC0 /* HomeTargetCard.swift in Sources */,
 				4C5BA8F32347AC0C009D45DD /* PersistenceService.swift in Sources */,
 				4C875AC822EA205E00323421 /* AllA1CVC.swift in Sources */,
 				4C8B3F902478D98F004983C7 /* FootCheck+CoreDataProperties.swift in Sources */,
 				4C8B3F8C2478D98F004983C7 /* Medication+CoreDataProperties.swift in Sources */,
-				4CB407F4224004ED000F5940 /* AddMedicationVC.swift in Sources */,
+				4C18DAFA247A0C7200280524 /* HomeFootCheckCard.swift in Sources */,
+				4C39FE51247A45D8006D9326 /* HomeTodayCard.swift in Sources */,
+				4CEF0A832479AD1C00DFA0D3 /* TabBarVC.swift in Sources */,
+				4C18DAF42479FA9B00280524 /* HomeCard.swift in Sources */,
 				4C6913D92477659600A1683F /* CardView.swift in Sources */,
+				4C18DAF8247A045D00280524 /* HomeMedicationsCard.swift in Sources */,
 				4C8B3F8B2478D98F004983C7 /* BloodSugar+CoreDataClass.swift in Sources */,
 				4C8B3F8D2478D98F004983C7 /* A1C+CoreDataProperties.swift in Sources */,
 				4C875AC422E8F25100323421 /* MainMedicationCell.swift in Sources */,
+				4C5C4253247A4EFF00A32D5E /* LogVC.swift in Sources */,
 				4CA7FB7323513D7B008C4C69 /* FootCheckCell.swift in Sources */,
-				4C04E6B423492FE000F307BC /* EditTargetBloodSugarVC.swift in Sources */,
+				4C4B9397247DF9C800BDC454 /* InputImageCell.swift in Sources */,
+				4C739ACE247B320800D14D3C /* LogTypeCell.swift in Sources */,
 				4C8B3F8E2478D98F004983C7 /* FootCheck+CoreDataClass.swift in Sources */,
+				4C18DAF22479F42100280524 /* HomeDateCard.swift in Sources */,
 				4C875ACC22EA20CE00323421 /* A1CCell.swift in Sources */,
 				4C8B3F912478D98F004983C7 /* BloodSugar+CoreDataProperties.swift in Sources */,
-				4CC9C31A22D3DB1900634014 /* FootCheckView.swift in Sources */,
 				4C7B70682234136B00F970F0 /* A1CVC.swift in Sources */,
+				4C4B939A247E032400BDC454 /* Enums.swift in Sources */,
+				4C514C482479BF9F00421AC0 /* BaseVC.swift in Sources */,
 				4C798B8C22089F0300D85BCA /* BloodSugarVC.swift in Sources */,
-				4CAEF26C2348142E00341614 /* TextFieldView.swift in Sources */,
 				4C8B3F922478D98F004983C7 /* Medication+CoreDataClass.swift in Sources */,
-				4CEF9E87229F03FD00F6F8DC /* MainVC.swift in Sources */,
+				4CEF0A872479B6FC00DFA0D3 /* SettingsCell.swift in Sources */,
+				4C4B9395247DE81400BDC454 /* StatusView.swift in Sources */,
+				4CEF9E87229F03FD00F6F8DC /* HomeVC.swift in Sources */,
 				4C875AC022E8E0AD00323421 /* LineGraphView.swift in Sources */,
-				4C5204D9223B4E9400D622C1 /* AddBloodSugarVC.swift in Sources */,
-				4CC9C31122D3C75000634014 /* BloodSugarView.swift in Sources */,
-				4CA7FB752353A1F3008C4C69 /* UIColorExtension.swift in Sources */,
-				4CC9C31522D3D8D500634014 /* A1CView.swift in Sources */,
+				4C4724AB247CDBF9006DE998 /* InputCell.swift in Sources */,
+				4CEF0A852479B6A800DFA0D3 /* SettingsVC.swift in Sources */,
 				4C875ACE22EA331D00323421 /* MedicationCell.swift in Sources */,
 				4C875ABB22E8AD1D00323421 /* BarGraphView.swift in Sources */,
 				4C7B706C22341F6800F970F0 /* MedicationsVC.swift in Sources */,
 				4C875AC622EA204A00323421 /* AllBloodSugarVC.swift in Sources */,
 				4C7B706E2234211E00F970F0 /* FootCheckVC.swift in Sources */,
 				4C29FA5821ED386A00A6859B /* AppDelegate.swift in Sources */,
-				4CC9C30822D38A2F00634014 /* DateView.swift in Sources */,
 				4C29FA6021ED386A00A6859B /* DiaLog.xcdatamodeld in Sources */,
-				4CC9C31722D3DB0000634014 /* MedicationsView.swift in Sources */,
-				4CB407F2224004DC000F5940 /* AddA1CVC.swift in Sources */,
+				4C18DAF62479FB5200280524 /* HomeA1CCard.swift in Sources */,
+				4C1BCAEE247AF76500163E8B /* DBHandler.swift in Sources */,
+				4C4724AF247D7848006DE998 /* InputPickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2DL7UPC8;
 				INFOPLIST_FILE = DiaLog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +620,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Koohang.DiaLog;
 				PRODUCT_NAME = DiaLog;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -524,7 +634,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2DL7UPC8;
 				INFOPLIST_FILE = DiaLog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Koohang.DiaLog;
 				PRODUCT_NAME = DiaLog;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

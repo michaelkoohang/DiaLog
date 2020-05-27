@@ -15,6 +15,7 @@ class AllA1CVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .secondarySystemBackground
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.register(A1CCell.self, forCellReuseIdentifier: "a1c")
         self.tableView.allowsSelection = false

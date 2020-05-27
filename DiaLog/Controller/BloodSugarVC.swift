@@ -9,14 +9,11 @@
 import UIKit
 import CoreData
 
-class BloodSugarVC: UIViewController {
+class BloodSugarVC: BaseVC {
             
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemBackground
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(goToLog))
-        seeAllButton.addTarget(self, action: #selector(showAllLogs), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "All Logs", style: .plain, target: self, action: #selector(showAllLogs))
         self.title = "Blood Sugar"
         setup()
     }
@@ -27,7 +24,6 @@ class BloodSugarVC: UIViewController {
     
     func setup() {
         self.dataView.addSubview(dailyAverage)
-        self.dataView.addSubview(seeAllButton)
         self.dataView.addSubview(beforeBreakfast)
         self.dataView.addSubview(afterBreakfast)
         self.dataView.addSubview(beforeLunch)
@@ -36,50 +32,49 @@ class BloodSugarVC: UIViewController {
         self.dataView.addSubview(afterDinner)
         self.view.addSubview(dataView)
         
-        dataView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        dataView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
-        dataView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
-        dataView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
-                    
-        dailyAverage.topAnchor.constraint(equalTo: self.dataView.topAnchor, constant: 14).isActive = true
-        dailyAverage.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        dailyAverage.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        dailyAverage.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        NSLayoutConstraint.activate([
+            dataView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            dataView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
+            dataView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0),
+            dataView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0),
+                        
+            dailyAverage.topAnchor.constraint(equalTo: self.dataView.topAnchor, constant: 14),
+            dailyAverage.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            dailyAverage.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            dailyAverage.heightAnchor.constraint(equalToConstant: 300),
+            
+            beforeBreakfast.topAnchor.constraint(equalTo: self.dailyAverage.bottomAnchor, constant: 14),
+            beforeBreakfast.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            beforeBreakfast.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            beforeBreakfast.heightAnchor.constraint(equalToConstant: 300),
+            
+            afterBreakfast.topAnchor.constraint(equalTo: self.beforeBreakfast.bottomAnchor, constant: 14),
+            afterBreakfast.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            afterBreakfast.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            afterBreakfast.heightAnchor.constraint(equalToConstant: 300),
+            
+            beforeLunch.topAnchor.constraint(equalTo: self.afterBreakfast.bottomAnchor, constant: 14),
+            beforeLunch.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            beforeLunch.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            beforeLunch.heightAnchor.constraint(equalToConstant: 300),
+            
+            afterLunch.topAnchor.constraint(equalTo: self.beforeLunch.bottomAnchor, constant: 14),
+            afterLunch.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            afterLunch.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            afterLunch.heightAnchor.constraint(equalToConstant: 300),
+            
+            beforeDinner.topAnchor.constraint(equalTo: self.afterLunch.bottomAnchor, constant: 14),
+            beforeDinner.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            beforeDinner.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            beforeDinner.heightAnchor.constraint(equalToConstant: 300),
+            
+            afterDinner.topAnchor.constraint(equalTo: self.beforeDinner.bottomAnchor, constant: 14),
+            afterDinner.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            afterDinner.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            afterDinner.heightAnchor.constraint(equalToConstant: 300)
+        ])
         
-        seeAllButton.topAnchor.constraint(equalTo: self.dailyAverage.topAnchor, constant: 16).isActive = true
-        seeAllButton.rightAnchor.constraint(equalTo: self.dailyAverage.rightAnchor, constant: -16).isActive = true
-        seeAllButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        seeAllButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        beforeBreakfast.topAnchor.constraint(equalTo: self.dailyAverage.bottomAnchor, constant: 14).isActive = true
-        beforeBreakfast.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        beforeBreakfast.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        beforeBreakfast.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        afterBreakfast.topAnchor.constraint(equalTo: self.beforeBreakfast.bottomAnchor, constant: 14).isActive = true
-        afterBreakfast.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        afterBreakfast.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        afterBreakfast.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        beforeLunch.topAnchor.constraint(equalTo: self.afterBreakfast.bottomAnchor, constant: 14).isActive = true
-        beforeLunch.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        beforeLunch.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        beforeLunch.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        afterLunch.topAnchor.constraint(equalTo: self.beforeLunch.bottomAnchor, constant: 14).isActive = true
-        afterLunch.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        afterLunch.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        afterLunch.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        beforeDinner.topAnchor.constraint(equalTo: self.afterLunch.bottomAnchor, constant: 14).isActive = true
-        beforeDinner.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        beforeDinner.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        beforeDinner.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        afterDinner.topAnchor.constraint(equalTo: self.beforeDinner.bottomAnchor, constant: 14).isActive = true
-        afterDinner.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        afterDinner.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        afterDinner.heightAnchor.constraint(equalToConstant: 300).isActive = true
     }
     
     // UI Components
@@ -92,18 +87,7 @@ class BloodSugarVC: UIViewController {
     }()
     
     let dailyAverage = BarGraphView(title: "Daily Average")
-    
-    let seeAllButton: UIButton = {
-        let b = UIButton()
-        b.setTitle("See All", for: .normal)
-        b.layer.cornerRadius = 5
-        b.setTitleColor(UIColor.white, for: .normal)
-        b.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        b.backgroundColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
-        b.translatesAutoresizingMaskIntoConstraints = false
-        return b
-    }()
-    
+        
     let beforeBreakfast = BarGraphView(title: "Before Breakfast")
     let afterBreakfast = BarGraphView(title: "After Breakfast")
     let beforeLunch = BarGraphView(title: "Before Lunch")
@@ -112,14 +96,6 @@ class BloodSugarVC: UIViewController {
     let afterDinner = BarGraphView(title: "After Dinner")
     
     // Navigation
-    
-    @objc func goToLog() {
-        let addBloodSugarVC = AddBloodSugarVC()
-        addBloodSugarVC.callbackClosure = { [weak self] in
-            self!.reloadGraphs()
-        }
-        self.navigationController?.present(addBloodSugarVC, animated: true, completion: nil)
-    }
     
     @objc func showAllLogs() {
         self.navigationController?.pushViewController(AllBloodSugarVC(), animated: true)
@@ -200,7 +176,7 @@ class BloodSugarVC: UIViewController {
                 sat += Double(bs.value)
                 satCount += 1
             default:
-                print("NONE FOUND")
+                break
             }
         }
         

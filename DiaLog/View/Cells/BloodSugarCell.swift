@@ -12,6 +12,7 @@ class BloodSugarCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: "bloodSugar")
+        self.contentView.backgroundColor = .systemBackground
         setup()
     }
     
@@ -25,17 +26,21 @@ class BloodSugarCell: UITableViewCell {
         self.addSubview(date)
         self.addSubview(notes)
         
-        log.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
-        log.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20).isActive = true
+        NSLayoutConstraint.activate([
+            log.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0),
+            log.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
+            
+            units.lastBaselineAnchor.constraint(equalTo: log.lastBaselineAnchor, constant: 0),
+            units.leftAnchor.constraint(equalTo: log.rightAnchor, constant: 8),
+            
+            date.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -12),
+            date.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
+            
+            notes.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 12),
+            notes.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20)
+        ])
         
-        units.lastBaselineAnchor.constraint(equalTo: log.lastBaselineAnchor, constant: 0).isActive = true
-        units.leftAnchor.constraint(equalTo: log.rightAnchor, constant: 8).isActive = true
         
-        date.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -12).isActive = true
-        date.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
-        
-        notes.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 12).isActive = true
-        notes.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
     }
     
     // UI Components

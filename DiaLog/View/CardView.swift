@@ -12,8 +12,10 @@ class CardView: UIView {
 
     init() {
         super.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        self.backgroundColor = .secondarySystemBackground
-        self.layer.cornerRadius = 25
+        self.backgroundColor = .secondarySystemGroupedBackground
+        self.layer.shadowRadius = 5
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.cornerRadius = 10
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     

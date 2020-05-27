@@ -13,10 +13,11 @@ class MedicationsVC: UITableViewController {
 
     var medications = [Medication]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .secondarySystemBackground
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addMedication))
         self.tableView.register(MedicationCell.self, forCellReuseIdentifier: "medication")
         self.tableView.allowsSelection = false
         self.title = "Medications"
@@ -88,15 +89,7 @@ class MedicationsVC: UITableViewController {
     }
     
     // Logic
-    
-    @objc func addMedication() {
-        let addMedicationVC = AddMedicationVC()
-        addMedicationVC.callbackClosure = { [weak self] in
-            self?.updateMedications()
-        }
-        self.navigationController?.present(addMedicationVC, animated: true, completion: nil)
-    }
-    
+
     func updateMedications() {
         let fetchRequest: NSFetchRequest<Medication> = Medication.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]

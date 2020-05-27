@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 2.0)
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: MainVC())
-        DropDown.startListeningToKeyboard()
+        window?.rootViewController = TabBarViewController()
         return true
     }
 

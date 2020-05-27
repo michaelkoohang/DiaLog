@@ -15,6 +15,7 @@ class AllBloodSugarVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .secondarySystemBackground
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.register(BloodSugarCell.self, forCellReuseIdentifier: "bloodSugar")
         self.tableView.allowsSelection = false

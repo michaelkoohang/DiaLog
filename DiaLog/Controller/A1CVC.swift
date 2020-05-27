@@ -9,16 +9,15 @@
 import UIKit
 import CoreData
 
-class A1CVC: UIViewController {
+class A1CVC: BaseVC {
     
     var a1cs = [A1C]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .systemBackground
+        self.view.backgroundColor = .secondarySystemBackground
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(goToLog))
-        seeAllButton.addTarget(self, action: #selector(showAllLogs), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "All Logs", style: .plain, target: self, action: #selector(showAllLogs))
         self.title = "A1C"
         setup()
     }
@@ -29,43 +28,22 @@ class A1CVC: UIViewController {
     
     func setup() {
         self.view.addSubview(yearlyAverage)
-        self.view.addSubview(seeAllButton)
- 
-        yearlyAverage.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 14).isActive = true
-        yearlyAverage.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14).isActive = true
-        yearlyAverage.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14).isActive = true
-        yearlyAverage.heightAnchor.constraint(equalToConstant: 300).isActive = true
         
-        seeAllButton.topAnchor.constraint(equalTo: self.yearlyAverage.topAnchor, constant: 16).isActive = true
-        seeAllButton.rightAnchor.constraint(equalTo: self.yearlyAverage.rightAnchor, constant: -16).isActive = true
-        seeAllButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        seeAllButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        NSLayoutConstraint.activate([
+            yearlyAverage.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 14),
+            yearlyAverage.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 14),
+            yearlyAverage.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -14),
+            yearlyAverage.heightAnchor.constraint(equalToConstant: 300),
+        ])
+ 
+
     }
     
     // UI Components
     
     let yearlyAverage = LineGraphView(title: "Yearly Average")
     
-    let seeAllButton: UIButton = {
-        let b = UIButton()
-        b.setTitle("See All", for: .normal)
-        b.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        b.setTitleColor(UIColor.white, for: .normal)
-        b.backgroundColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
-        b.layer.cornerRadius = 5
-        b.translatesAutoresizingMaskIntoConstraints = false
-        return b
-    }()
-    
     // Navigation
-    
-    @objc func goToLog() {
-        let addA1CVC = AddA1CVC()
-        addA1CVC.callbackClosure = { [weak self] in
-            self?.updateGraph()
-        }
-        self.navigationController?.present(addA1CVC, animated: true, completion: nil)
-    }
     
     @objc func showAllLogs() {
         self.navigationController?.pushViewController(AllA1CVC(), animated: true)

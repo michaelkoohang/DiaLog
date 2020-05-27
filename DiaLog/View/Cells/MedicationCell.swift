@@ -9,7 +9,7 @@
 import UIKit
 
 class MedicationCell: UITableViewCell {
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: "medication")
         setup()
@@ -26,24 +26,28 @@ class MedicationCell: UITableViewCell {
         self.addSubview(unitsAndFrequency)
         self.addSubview(notes)
         
-        icon.topAnchor.constraint(equalTo: self.topAnchor, constant: 16).isActive = true
-        icon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        icon.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        NSLayoutConstraint.activate([
+            icon.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
+            icon.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16),
+            icon.heightAnchor.constraint(equalToConstant: 30),
+            icon.widthAnchor.constraint(equalToConstant: 30),
+            
+            title.centerYAnchor.constraint(equalTo: icon.centerYAnchor, constant: 0),
+            title.leftAnchor.constraint(equalTo: icon.rightAnchor, constant: 16),
+            
+            dosage.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 4),
+            dosage.leftAnchor.constraint(equalTo: title.leftAnchor, constant: 0),
+            
+            unitsAndFrequency.lastBaselineAnchor.constraint(equalTo: dosage.lastBaselineAnchor, constant: 0),
+            unitsAndFrequency.leftAnchor.constraint(equalTo: dosage.rightAnchor, constant: 8),
+            
+            notes.topAnchor.constraint(equalTo: dosage.bottomAnchor, constant: 12),
+            notes.leftAnchor.constraint(equalTo: title.leftAnchor, constant: 0),
+            notes.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -16),
+            notes.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
+        ])
         
-        title.centerYAnchor.constraint(equalTo: icon.centerYAnchor, constant: 0).isActive = true
-        title.leftAnchor.constraint(equalTo: icon.rightAnchor, constant: 16).isActive = true
-    
-        dosage.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 4).isActive = true
-        dosage.leftAnchor.constraint(equalTo: title.leftAnchor, constant: 0).isActive = true
         
-        unitsAndFrequency.lastBaselineAnchor.constraint(equalTo: dosage.lastBaselineAnchor, constant: 0).isActive = true
-        unitsAndFrequency.leftAnchor.constraint(equalTo: dosage.rightAnchor, constant: 8).isActive = true
-        
-        notes.topAnchor.constraint(equalTo: dosage.bottomAnchor, constant: 12).isActive = true
-        notes.leftAnchor.constraint(equalTo: title.leftAnchor, constant: 0).isActive = true
-        notes.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -16).isActive = true
-        notes.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16).isActive = true
         
     }
     
@@ -51,7 +55,7 @@ class MedicationCell: UITableViewCell {
     
     let icon: UIImageView = {
         let imv = UIImageView()
-        imv.image = UIImage(systemName: "capsule.fill")
+        imv.image = UIImage(systemName: "capsule")
         imv.contentMode = .scaleAspectFit
         imv.tintColor = .systemBlue
         imv.translatesAutoresizingMaskIntoConstraints = false
