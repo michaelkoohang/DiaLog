@@ -27,6 +27,19 @@ class DBHandler {
         return "0"
     }
     
+    public static func deleteTargetBloodSugar() {
+        let fetchRequest: NSFetchRequest<BloodSugar> = BloodSugar.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "type == %@", "Target")
+        do {
+            let result = try PersistanceService.context.fetch(fetchRequest)
+            if !result.isEmpty {
+                PersistanceService.context.delete(result[0])
+            }
+        } catch {
+            print("error")
+        }
+    }
+    
     public static func getTodayBloodSugar() -> [Double] {
         let fetchRequest: NSFetchRequest<BloodSugar> = BloodSugar.fetchRequest()
         

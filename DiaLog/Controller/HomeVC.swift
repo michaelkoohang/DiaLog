@@ -40,9 +40,6 @@ class HomeVC: BaseVC {
                    tableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0),
                    tableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
         ])
-       
-        let tap = UITapGestureRecognizer(target: self, action: #selector(swipeDown(_:)))
-        self.tableView.addGestureRecognizer(tap)
     }
     
     let tableView: UITableView = {
@@ -54,11 +51,6 @@ class HomeVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
-    }
-    
-    @objc func swipeDown(_ gesture: UISwipeGestureRecognizer) -> Bool {
-        self.view.endEditing(true)
-        return true
     }
     
     // Navigation

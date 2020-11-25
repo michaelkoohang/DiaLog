@@ -263,9 +263,9 @@
 		4C875AC122E8E42900323421 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4C18DAFB247A0F6700280524 /* Graphs */,
 				4C514C4C2479C25B00421AC0 /* Home */,
 				4CB1B6C1247CB793006EC8A8 /* Log */,
+				4C18DAFB247A0F6700280524 /* Graphs */,
 				4C875AC222E8F24300323421 /* Cells */,
 				4C4B9394247DE81400BDC454 /* StatusView.swift */,
 				4C6913D82477659600A1683F /* CardView.swift */,
@@ -606,7 +606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E059400178AE6CD5BE117D35 /* Pods-DiaLog.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dark";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2DL7UPC8;
@@ -629,7 +629,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCC8B188F6FEBF21B54B2540 /* Pods-DiaLog.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dark";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW2DL7UPC8;

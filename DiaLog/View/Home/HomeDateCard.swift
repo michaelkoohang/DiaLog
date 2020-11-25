@@ -48,7 +48,7 @@ class HomeDateCard: HomeCard {
     let icon: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
-        iv.image = UIImage(named: "Icon.png")
+        iv.image = UIImage(named: "Logo.png")
         iv.backgroundColor = UIColor(white: 0, alpha: 0)
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv

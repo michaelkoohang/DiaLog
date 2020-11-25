@@ -11,13 +11,14 @@ import CoreData
 
 class HomeTargetCard: HomeCard, UITextFieldDelegate {
     
-    let hp = UINotificationFeedbackGenerator()
+    let selectionFeedback = UISelectionFeedbackGenerator()
+    let notficationFeedback = UINotificationFeedbackGenerator()
         
     init() {
         super.init(style: .default, reuseIdentifier: "hbsc")
         targetGoalTextField.delegate = self
-        editButton.addTarget(self, action: #selector(startEditing), for: .touchUpInside)
-        getTargetBloodSugar()
+        editButton.addTarget(self, action: #selector(toggleEdit), for: .touchUpInside)
+        targetGoalTextField.text = DBHandler.getTargetBloodSugar()
         setup()
     }
     
@@ -109,17 +110,26 @@ class HomeTargetCard: HomeCard, UITextFieldDelegate {
         updateTarget()
     }
     
-    @objc func startEditing() {
-        targetGoalTextField.becomeFirstResponder()
+    @objc func toggleEdit() {
+        if targetGoalTextField.isFirstResponder {
+            editButton.setTitle("Edit", for: .normal)
+            targetGoalTextField.resignFirstResponder()
+            notficationFeedback.notificationOccurred(.success)
+            save()
+        } else {
+            editButton.setTitle("Done", for: .normal)
+            targetGoalTextField.becomeFirstResponder()
+            selectionFeedback.selectionChanged()
+        }
     }
     
     @objc func save() {
         guard let amount = Int(targetGoalTextField.text!) else {
-            self.getTargetBloodSugar()
+            targetGoalTextField.text = DBHandler.getTargetBloodSugar()
             return
         }
         
-        deleteTarget()
+        DBHandler.deleteTargetBloodSugar()
         
         let value = Int16(amount)
         let type = "Target"
@@ -130,51 +140,16 @@ class HomeTargetCard: HomeCard, UITextFieldDelegate {
         bs.type = type
         bs.date = date
         PersistanceService.saveContext()
-        
-        targetGoalTextField.resignFirstResponder()
-        hp.notificationOccurred(.success)
-    }
-    
-    func getTargetBloodSugar() {
-        let fetchRequest: NSFetchRequest<BloodSugar> = BloodSugar.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "type == %@", "Target")
-        do {
-            let result = try PersistanceService.context.fetch(fetchRequest)
-            if !result.isEmpty {
-                targetGoalTextField.text = String(result[0].value)
-            }
-        } catch {
-            print("error")
-        }
-    }
-    
-    func deleteTarget() {
-        let fetchRequest: NSFetchRequest<BloodSugar> = BloodSugar.fetchRequest()
-        fetchRequest.predicate = NSPredicate(format: "type == %@", "Target")
-        do {
-            let result = try PersistanceService.context.fetch(fetchRequest)
-            if !result.isEmpty {
-                PersistanceService.context.delete(result[0])
-            }
-        } catch {
-            print("error")
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        save()
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        targetGoalTextField.resignFirstResponder()
-        return true
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 3
         let currentString: NSString = targetGoalTextField.text! as NSString
         let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-        return newString.length <= maxLength
+        return newString.length <= 3
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        editButton.setTitle("Done", for: .normal)
     }
     
 }

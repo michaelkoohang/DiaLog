@@ -10,11 +10,15 @@ import UIKit
 import CoreData
 
 class BloodSugarVC: BaseVC {
+    
+    let segmentedControl = UISegmentedControl(items: ["Data", "Graphs"])
             
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.largeTitleDisplayMode = .never
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "All Logs", style: .plain, target: self, action: #selector(showAllLogs))
-        self.title = "Blood Sugar"
+        self.navigationItem.titleView = segmentedControl
+//        segmentedControl.
         setup()
     }
     
