@@ -24,7 +24,7 @@ Whenever users visit the app, they can see their most recent logs at a glance on
 ## Built with
 
 * [Swift](https://swift.org)
-* [UIKit](https://developer.apple.com/documentation/swiftui)
+* [UIKit](https://developer.apple.com/documentation/uikit)
 * [Core Data](https://developer.apple.com/documentation/coredata)
 * [Lottie](https://airbnb.design/lottie/)
 * [ScrollableGraphView](https://github.com/yhmnin/Scrollable-GraphView)
